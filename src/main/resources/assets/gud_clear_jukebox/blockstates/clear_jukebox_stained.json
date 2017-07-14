@@ -1,0 +1,90 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "gud_clear_jukebox:clear_jukebox"
+  },
+  "variants":{
+    "color":{
+      "black":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_black"
+        }
+      },
+      "blue":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_blue"
+        }
+      },
+      "brown":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_brown"
+        }
+      },
+      "cyan":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_cyan"
+        }
+      },
+      "gray":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_gray"
+        }
+      },
+      "green":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_green"
+        }
+      },
+      "light_blue":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_light_blue"
+        }
+      },
+      "lime":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_lime"
+        }
+      },
+      "magenta":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_magenta"
+        }
+      },
+      "orange":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_orange"
+        }
+      },
+      "pink":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_pink"
+        }
+      },
+      "purple":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_purple"
+        }
+      },
+      "red":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_red"
+        }
+      },
+      "silver":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_silver"
+        }
+      },
+      "white":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_white"
+        }
+      },
+      "yellow":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_yellow"
+        }
+      }
+    }
+  }
+}

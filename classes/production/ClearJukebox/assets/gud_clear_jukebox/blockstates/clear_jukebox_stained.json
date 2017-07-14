@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "color=black": { "model": "gud_clear_jukebox:clear_jukebox_black" },
+    "color=blue": { "model": "gud_clear_jukebox:clear_jukebox_blue" },
+    "color=brown": { "model": "gud_clear_jukebox:clear_jukebox_brown" },
+    "color=cyan": { "model": "gud_clear_jukebox:clear_jukebox_cyan" },
+    "color=gray": { "model": "gud_clear_jukebox:clear_jukebox_gray" },
+    "color=green": { "model": "gud_clear_jukebox:clear_jukebox_green" },
+    "color=light_blue": { "model": "gud_clear_jukebox:clear_jukebox_light_blue" },
+    "color=lime": { "model": "gud_clear_jukebox:clear_jukebox_lime" },
+    "color=magenta": { "model": "gud_clear_jukebox:clear_jukebox_magenta" },
+    "color=orange": { "model": "gud_clear_jukebox:clear_jukebox_orange" },
+    "color=pink": { "model": "gud_clear_jukebox:clear_jukebox_pink" },
+    "color=purple": { "model": "gud_clear_jukebox:clear_jukebox_purple" },
+    "color=red": { "model": "gud_clear_jukebox:clear_jukebox_red" },
+    "color=silver": { "model": "gud_clear_jukebox:clear_jukebox_silver" },
+    "color=white": { "model": "gud_clear_jukebox:clear_jukebox_white" },
+    "color=yellow": { "model": "gud_clear_jukebox:clear_jukebox_yellow" }
+  }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gud_clear_jukebox",
+  "name": "Clear Jukebox",
+  "description": "Adds a clear Jukebox. Purely aesthetic",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["gudenau"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

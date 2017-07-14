@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "www",
+    "gdg",
+    "www"
+  ],
+  "key": {
+    "w": [
+      {
+        "item": "minecraft:planks",
+        "data": 0
+      },
+      {
+        "item": "minecraft:planks",
+        "data": 1
+      },
+      {
+        "item": "minecraft:planks",
+        "data": 2
+      },
+      {
+        "item": "minecraft:planks",
+        "data": 3
+      },
+      {
+        "item": "minecraft:planks",
+        "data": 4
+      },
+      {
+        "item": "minecraft:planks",
+        "data": 5
+      }
+    ],
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "gud_clear_jukebox:clear_jukebox"
+  }
+}

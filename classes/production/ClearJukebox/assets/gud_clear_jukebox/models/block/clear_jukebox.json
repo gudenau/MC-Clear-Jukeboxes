@@ -1,0 +1,113 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "top": "minecraft:blocks/jukebox_top",
+    "bottom": "minecraft:blocks/jukebox_side",
+    "side": "gud_clear_jukebox:blocks/clear_jukebox",
+    "inside": "minecraft:blocks/itemframe_background",
+    "particle": "minecraft:blocks/jukebox_side"
+  },
+  "elements": [
+    {
+      "from": [0, 13, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down":{
+          "uv": [0, 0, 16, 16],
+          "texture": "#inside"
+        },
+        "up":{
+          "uv": [0, 0, 16, 16],
+          "texture": "#top"
+        },
+        "east":{
+          "uv": [0, 0, 16, 3],
+          "texture": "#side"
+        },
+        "west":{
+          "uv": [0, 0, 16, 3],
+          "texture": "#side"
+        },
+        "north":{
+          "uv": [0, 0, 16, 3],
+          "texture": "#side"
+        },
+        "south":{
+          "uv": [0, 0, 16, 3],
+          "texture": "#side"
+        }
+      }
+    },{
+      "from": [0, 0, 0],
+      "to": [16, 3, 16],
+      "faces": {
+        "down":{
+          "uv": [0, 0, 16, 16],
+          "texture": "#bottom"
+        },
+        "up":{
+          "uv": [0, 0, 16, 16],
+          "texture": "#inside"
+        },
+        "east":{
+          "uv": [0, 13, 16, 16],
+          "texture": "#side"
+        },
+        "west":{
+          "uv": [0, 13, 16, 16],
+          "texture": "#side"
+        },
+        "north":{
+          "uv": [0, 13, 16, 16],
+          "texture": "#side"
+        },
+        "south":{
+          "uv": [0, 13, 16, 16],
+          "texture": "#side"
+        }
+      }
+    },{
+      "from": [0, 3, 0],
+      "to": [16, 13, 16],
+      "faces": {
+        "east":{
+          "uv": [0, 3, 16, 13],
+          "texture": "#side"
+        },
+        "west":{
+          "uv": [0, 3, 16, 13],
+          "texture": "#side"
+        },
+        "north":{
+          "uv": [0, 3, 16, 13],
+          "texture": "#side"
+        },
+        "south":{
+          "uv": [0, 3, 16, 13],
+          "texture": "#side"
+        }
+      }
+    },{
+      "from": [7.5, 3, 7.5],
+      "to": [8.5, 13, 8.5],
+      "faces": {
+        "east":{
+          "uv": [0, 3, 1, 13],
+          "texture": "#bottom"
+        },
+        "west":{
+          "uv": [0, 3, 1, 13],
+          "texture": "#bottom"
+        },
+        "north":{
+          "uv": [0, 3, 1, 13],
+          "texture": "#bottom"
+        },
+        "south":{
+          "uv": [0, 3, 1, 13],
+          "texture": "#bottom"
+        }
+      }
+    }
+  ]
+}
