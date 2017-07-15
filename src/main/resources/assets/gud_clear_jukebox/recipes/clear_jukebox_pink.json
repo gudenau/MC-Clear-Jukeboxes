@@ -34,13 +34,15 @@
       }
     ],
     "g": {
-      "item": "minecraft:glass"
+      "item": "minecraft:stained_glass",
+      "data": 6
     },
     "d": {
       "item": "minecraft:diamond"
     }
   },
   "result": {
-    "item": "gud_clear_jukebox:clear_jukebox"
+    "item": "gud_clear_jukebox:clear_jukebox_stained",
+    "data": 6
   }
 }

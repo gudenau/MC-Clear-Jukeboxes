@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "gud_clear_jukebox:stained_glass_pane",
   "pattern": [
     "www",
     "gdg",

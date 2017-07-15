@@ -15,7 +15,7 @@ import net.minecraft.item.ItemStack;
  */
 public class TileEntityJukeboxRenderer extends TileEntitySpecialRenderer<TileEntityClearJukebox> {
     @Override
-    public void renderTileEntityFast(TileEntityClearJukebox tile, double x, double y, double z, float partialTicks, int destroyStage, float partial, net.minecraft.client.renderer.BufferBuilder buffer) {
+    public void render(TileEntityClearJukebox tile, double x, double y, double z, float partialTicks, int destroyStage, float alpha){
         if(tile == null){
             return;
         }

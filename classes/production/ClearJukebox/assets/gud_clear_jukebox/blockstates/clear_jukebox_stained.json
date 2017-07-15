@@ -1,20 +1,90 @@
 {
-  "variants": {
-    "color=black": { "model": "gud_clear_jukebox:clear_jukebox_black" },
-    "color=blue": { "model": "gud_clear_jukebox:clear_jukebox_blue" },
-    "color=brown": { "model": "gud_clear_jukebox:clear_jukebox_brown" },
-    "color=cyan": { "model": "gud_clear_jukebox:clear_jukebox_cyan" },
-    "color=gray": { "model": "gud_clear_jukebox:clear_jukebox_gray" },
-    "color=green": { "model": "gud_clear_jukebox:clear_jukebox_green" },
-    "color=light_blue": { "model": "gud_clear_jukebox:clear_jukebox_light_blue" },
-    "color=lime": { "model": "gud_clear_jukebox:clear_jukebox_lime" },
-    "color=magenta": { "model": "gud_clear_jukebox:clear_jukebox_magenta" },
-    "color=orange": { "model": "gud_clear_jukebox:clear_jukebox_orange" },
-    "color=pink": { "model": "gud_clear_jukebox:clear_jukebox_pink" },
-    "color=purple": { "model": "gud_clear_jukebox:clear_jukebox_purple" },
-    "color=red": { "model": "gud_clear_jukebox:clear_jukebox_red" },
-    "color=silver": { "model": "gud_clear_jukebox:clear_jukebox_silver" },
-    "color=white": { "model": "gud_clear_jukebox:clear_jukebox_white" },
-    "color=yellow": { "model": "gud_clear_jukebox:clear_jukebox_yellow" }
+  "forge_marker": 1,
+  "defaults": {
+    "model": "gud_clear_jukebox:clear_jukebox"
+  },
+  "variants":{
+    "color":{
+      "black":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_black"
+        }
+      },
+      "blue":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_blue"
+        }
+      },
+      "brown":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_brown"
+        }
+      },
+      "cyan":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_cyan"
+        }
+      },
+      "gray":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_gray"
+        }
+      },
+      "green":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_green"
+        }
+      },
+      "light_blue":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_light_blue"
+        }
+      },
+      "lime":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_lime"
+        }
+      },
+      "magenta":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_magenta"
+        }
+      },
+      "orange":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_orange"
+        }
+      },
+      "pink":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_pink"
+        }
+      },
+      "purple":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_purple"
+        }
+      },
+      "red":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_red"
+        }
+      },
+      "silver":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_silver"
+        }
+      },
+      "white":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_white"
+        }
+      },
+      "yellow":{
+        "textures": {
+          "side": "gud_clear_jukebox:blocks/clear_jukebox_yellow"
+        }
+      }
+    }
   }
 }

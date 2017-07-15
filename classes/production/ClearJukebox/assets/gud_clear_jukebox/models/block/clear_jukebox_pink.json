@@ -1,6 +1,0 @@
-{
-  "parent": "gud_clear_jukebox:block/clear_jukebox",
-  "textures": {
-      "side": "gud_clear_jukebox:blocks/clear_jukebox_pink"
-  }
-}

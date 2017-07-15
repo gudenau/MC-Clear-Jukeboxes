@@ -52,39 +52,40 @@ public class ClearJukebox {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
-        ResourceLocation resourceLocation = new ResourceLocation("gud_clear_jukebox", "clear_jukebox");
-        jukebox = new BlockClearJukebox();
-        jukebox.setRegistryName(resourceLocation);
-        jukebox.setUnlocalizedName(jukebox.toString());
-        jukeboxItem = new ItemBlock(jukebox).setUnlocalizedName("gud_clear_jukebox");
-        jukeboxItem.setRegistryName(resourceLocation);
-
-        ResourceLocation resourceLocationStained = new ResourceLocation("gud_clear_jukebox", "clear_jukebox_stained");
-        jukeboxStained = new BlockStainedClearJukebox();
-        jukeboxStained.setRegistryName(resourceLocationStained);
-        jukeboxStained.setUnlocalizedName(jukeboxStained.toString());
-        jukeboxStainedItem = new ItemMultiTexture(jukeboxStained, jukeboxStained, jukeboxStained::getName).setUnlocalizedName("gud_clear_jukebox_stained");
-        jukeboxStainedItem.setRegistryName(resourceLocationStained);
-
-        GameRegistry.registerTileEntity(TileEntityClearJukebox.class, "gud_clear_jukebox:clear_jukebox");
-
         proxy.preInit();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     @SubscribeEvent
-    public void onItemRegisterEvent(RegistryEvent.Register<Item> itemRegister){
-        IForgeRegistry<Item> registry = itemRegister.getRegistry();
-        registry.register(jukeboxItem);
-        registry.register(jukeboxStainedItem);
-    }
-
-    @SubscribeEvent
     public void onBlockRegisterEvent(RegistryEvent.Register<Block> itemRegister){
+        jukebox = new BlockClearJukebox();
+        jukebox.setRegistryName(new ResourceLocation("gud_clear_jukebox", "clear_jukebox"));
+        jukebox.setUnlocalizedName("gud_clear_jukebox");
+
+        jukeboxStained = new BlockStainedClearJukebox();
+        jukeboxStained.setRegistryName(new ResourceLocation("gud_clear_jukebox", "clear_jukebox_stained"));
+        jukeboxStained.setUnlocalizedName("gud_clear_stained_jukebox");
+
+
         IForgeRegistry<Block> registry = itemRegister.getRegistry();
         registry.register(jukebox);
         registry.register(jukeboxStained);
+
+        GameRegistry.registerTileEntity(TileEntityClearJukebox.class, "gud_clear_jukebox:clear_jukebox");
+    }
+
+    @SubscribeEvent
+    public void onItemRegisterEvent(RegistryEvent.Register<Item> itemRegister){
+        jukeboxItem = new ItemBlock(jukebox).setUnlocalizedName("gud_clear_jukebox");
+        jukeboxItem.setRegistryName(jukebox.getRegistryName());
+
+        jukeboxStainedItem = new ItemMultiTexture(jukeboxStained, jukeboxStained, jukeboxStained::getName).setUnlocalizedName("gud_clear_jukebox_stained");
+        jukeboxStainedItem.setRegistryName(jukeboxStained.getRegistryName());
+
+        IForgeRegistry<Item> registry = itemRegister.getRegistry();
+        registry.register(jukeboxItem);
+        registry.register(jukeboxStainedItem);
     }
 
     @SideOnly(Side.CLIENT)
@@ -97,7 +98,7 @@ public class ClearJukebox {
     public void registerBlockModels(ModelRegistryEvent event){
         ModelLoader.setCustomModelResourceLocation(jukeboxItem, 0, new ModelResourceLocation(jukeboxItem.getRegistryName(), "inventory"));
         for(EnumDyeColor enumdyecolor : EnumDyeColor.values()){
-            ModelLoader.setCustomModelResourceLocation(jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation(jukeboxStainedItem.getRegistryName(), enumdyecolor.getName()));
+            ModelLoader.setCustomModelResourceLocation(jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation(jukeboxStainedItem.getRegistryName(), "color=" + enumdyecolor.getName()));
         }
     }
 }
