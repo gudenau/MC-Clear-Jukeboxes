@@ -8,8 +8,10 @@ import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 /**
  * Created by gudenau on 1/22/2017.
@@ -23,21 +25,11 @@ public class ClientProxy extends Proxy {
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityClearJukebox.class, new TileEntityJukeboxRenderer());
     }
 
-    @Override
-    public void init(){
-        if(false){
-            Item jukeboxItem = ClearJukebox.instance.jukeboxItem;
-            Item jukeboxStainedItem = ClearJukebox.instance.jukeboxStainedItem;
-
-            ModelLoader.setCustomModelResourceLocation(jukeboxItem, 0, new ModelResourceLocation(jukeboxItem.getRegistryName(), "inventory"));
-            ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-            //mesher.register(jukeboxItem, 0, new ModelResourceLocation(jukeboxItem.getRegistryName(), "inventory"));
-
-            for(EnumDyeColor enumdyecolor : EnumDyeColor.values()){
-                //list.add(new ItemStack(itemIn, 1, enumdyecolor.getMetadata()));
-                ModelLoader.setCustomModelResourceLocation(jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation(jukeboxStainedItem.getRegistryName(), enumdyecolor.getName()));
-                //mesher.register(jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation("gud_clear_jukebox:clear_jukebox_" + enumdyecolor.getName(), "inventory"));
-            }
+    @SubscribeEvent
+    public void registerBlockModels(ModelRegistryEvent event){
+        ModelLoader.setCustomModelResourceLocation(ClearJukebox.instance.jukeboxItem, 0, new ModelResourceLocation(ClearJukebox.instance.jukeboxItem.getRegistryName(), "inventory"));
+        for(EnumDyeColor enumdyecolor : EnumDyeColor.values()){
+            ModelLoader.setCustomModelResourceLocation(ClearJukebox.instance.jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation(ClearJukebox.instance.jukeboxStainedItem.getRegistryName(), "color=" + enumdyecolor.getName()));
         }
     }
 }

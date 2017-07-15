@@ -55,6 +55,7 @@ public class ClearJukebox {
         proxy.preInit();
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(proxy);
     }
 
     @SubscribeEvent
@@ -92,13 +93,5 @@ public class ClearJukebox {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
         proxy.init();
-    }
-
-    @SubscribeEvent
-    public void registerBlockModels(ModelRegistryEvent event){
-        ModelLoader.setCustomModelResourceLocation(jukeboxItem, 0, new ModelResourceLocation(jukeboxItem.getRegistryName(), "inventory"));
-        for(EnumDyeColor enumdyecolor : EnumDyeColor.values()){
-            ModelLoader.setCustomModelResourceLocation(jukeboxStainedItem, enumdyecolor.getMetadata(), new ModelResourceLocation(jukeboxStainedItem.getRegistryName(), "color=" + enumdyecolor.getName()));
-        }
     }
 }
